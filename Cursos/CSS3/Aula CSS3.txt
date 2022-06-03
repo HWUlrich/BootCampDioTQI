@@ -1,0 +1,51 @@
+
+    <style>
+      body {
+        text-align: center;
+        background: url(fundo.png);
+        background-size: 100%;
+        color: white;
+        font-family: arial;
+      }
+      h1 {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 22px;
+        font-weight: normal;
+      }
+      .retrato {
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        width: 80px;
+        margin-top: 40px;
+      }
+      .logow {
+        width: 13px;
+      }
+      .logol {
+        width: 13px;
+      }
+      a {
+        color: wheat;
+        text-decoration: none;
+        background: rgba(216, 205, 205, 0.24);
+        width: 200px;
+        height: 40px;
+        line-height: 45px;
+        display: inline-block;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+    </style>
