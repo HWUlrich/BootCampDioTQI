@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onClick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+	document.getElementById("demo").innerHTML="Paragraph Changed.";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+}
+
+#title, .subtitle, .post_title {
+    color: blue;
+    }
+
+.post_title {
+    font-size: 14px;
+    font-style: italic;
+    }
+
+.post_title {
+    background-color: wheat;
+}
+
+.post {
+    color: white;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.image {
+    border-radius: 50%;
+}

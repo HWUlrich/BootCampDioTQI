@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>First Web Page</h1>
+<p>First Paragraph</p>
+
+<button type="button" onClick="document.write(5+6)">Try it</button>
+
+</body>
+</html>

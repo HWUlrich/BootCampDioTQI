@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<h2>Demo JavaScript in Head</h2>
+
+<script>
+function myFunction() {
+	documente.getElementeById("demo").innerHTML="Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<p id="demo">A Paragraph</p>
+<button type="button" onClick="myFunction()">Try It</button>
+
+</body>
+</html>

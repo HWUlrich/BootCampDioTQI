@@ -1,0 +1,15 @@
+<!DOTYPE html>
+<html>
+<body>
+
+<h1>My firt Web Page</h1>
+<p>First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+documente.getElementById("demo").innerHTML= 5 + 6;
+</script>
+
+</body>
+</html>
