@@ -85,7 +85,7 @@ a:hover {
     justify-content: center;
     cursor: pointer;
     z-index: 9999;
-    transition: 400ms ease-in-out 0s;
+    transition: 400ms ease-in-out;
 }
 
 .checkbox .trace {
@@ -128,22 +128,22 @@ a:hover {
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px white;
     z-index: -1;
-    transition: 400ms ease-in-out 0;
+    transition: 800ms ease-in-out 0s;
 }
 
 .menu-itens {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: 400ms ease-in-out 0;
+    transition: 400ms ease-in-out 0s;
 }
 
 .menu-itens ul {
@@ -185,7 +185,7 @@ a:hover {
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 900px white;
+    box-shadow: 0px 0px 0px 400px white;
     z-index: 1;
 }
 
@@ -193,3 +193,105 @@ a:hover {
     visibility: visible;
     opacity: 1;
 }
+
+/* Cards */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    margin: 3rem 0;
+    background-image: url("images Mars.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-text {
+    width: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+
+.card-wrapper::before {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    opacity: 1;
+    width: 350px;
+    height: 250px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #5b0878, #085078, #4ca59b, #1fa194);
+}
+
+/* responsivo */
+
+@media (max-width) 800px {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
