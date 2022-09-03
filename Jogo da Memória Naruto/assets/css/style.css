@@ -1,0 +1,61 @@
+:root {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-image: url('../imges/Background-Naruto.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body {
+	height: 100%;
+	margin-top: 50px;
+	display: flex;
+	align-content: center;
+}
+
+.memory-game {
+	height: 750px;
+	width: 900px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 2000px;
+}
+
+.card {
+	height: calc(40% - 10px);
+	width: calc(30% - 10px);
+	margin: 20px;
+	position: relative;
+	box-shadow: 1px 1px 1px rgba(177, 15, 15, 0.527);
+	cursor: pointer;
+	transform: scale(1.0);  
+	transform-style: preserve-3d;
+	transition: transform .9s;
+}
+
+.card:active {
+	transform: scale(0.97);
+	transition: transform .3s;
+}
+
+.card-front,
+.card-back {
+	width: 100%;
+    height: 100%;
+	padding: 15px;
+	position: absolute;
+	border-radius: 5px;
+	background: rgb(201, 172, 11);
+	backface-visibility: hidden;
+}
+
+.card-front {
+	transform: rotateY(180deg);
+}
+
+.card.flip {
+	transform: rotateY(180deg);
+}
